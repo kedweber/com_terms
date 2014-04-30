@@ -15,12 +15,14 @@ class ComTermsControllerTag extends ComDefaultControllerDefault
 {
 	protected function _actionImport(KCommandContext $context)
 	{
-		$string = file_get_contents("http://localhost:8888/cta.int/staging/en/?option=com_tags&view=tags&format=json&limit=1000");
-		$items = json_decode($string, true);
+		$items = $this->getService('com://admin/terms.model.items')->getList();
 
 		foreach($items as $item) {
 			$row = $this->getService('com://admin/terms.model.tags')->id($item->id)->getItem();
-			$row->setData($item);
+			$row->setData(array(
+				'id'	=> $item->id,
+				'title' => $item->name
+			));
 			$row->save();
 		}
 	}
