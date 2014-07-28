@@ -29,16 +29,16 @@ section:
 
 ```json
 {
-    "name": "moyo/tags",
+    "name": "moyo/terms",
     "type": "vcs",
-    "url": "https://git.assembla.com/moyo-content.tags.git"
+    "url": "https://github.com/cta-int/terms.git"
 }
 ```
 
 The require section should contain the following line:
 
 ```json
-    "moyo/tags": "1.0.*",
+    "moyo/terms": "1.0.*",
 ```
 
 Afterward, just run `composer update` from the root of your Joomla project.
