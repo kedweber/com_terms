@@ -7,6 +7,16 @@ class ComTermsDatabaseTableTags extends KDatabaseTableDefault
      */
     protected function _initialize(KConfig $config)
     {
+		$relationable = $this->getBehavior('com://site/taxonomy.database.behavior.relationable',
+			array(
+				'descendants' => array(
+					'articles' => array(
+						'identifier' => 'com://site/articles.model.articles',
+					)
+				)
+			)
+		);
+
         $config->append(array(
             'behaviors' => array(
 				'com://admin/moyo.database.behavior.sluggable',
@@ -15,7 +25,7 @@ class ComTermsDatabaseTableTags extends KDatabaseTableDefault
 				'com://admin/moyo.database.behavior.creatable',
 				'modifiable',
                 'lockable',
-                'com://admin/taxonomy.database.behavior.relationable',
+				$relationable,
                 'com://admin/translations.database.behavior.translatable',
             )
         ));
