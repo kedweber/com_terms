@@ -1,9 +1,9 @@
 {
     "name": "moyo/terms",
     "type": "joomlatools-installer",
-    "description": "Router Package",
+    "description": "Terms Package",
     "keywords": ["joomla", "terms"],
-    "homepage": "https://moyoweb.assembla.com/code/moyo-content/git-11/nodes",
+    "homepage": "https://github.com/cta-int/terms.git",
     "authors": [
         {
             "name": "Dave Li",
