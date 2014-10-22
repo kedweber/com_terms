@@ -29,7 +29,7 @@ section:
 
 ```json
 {
-    "name": "moyo/terms",
+    "name": "cta/terms",
     "type": "vcs",
     "url": "https://github.com/cta-int/terms.git"
 }
@@ -38,7 +38,7 @@ section:
 The require section should contain the following line:
 
 ```json
-    "moyo/terms": "1.0.*",
+    "cta/terms": "1.0.*",
 ```
 
 Afterward, just run `composer update` from the root of your Joomla project.
