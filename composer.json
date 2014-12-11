@@ -1,8 +1,8 @@
 {
     "name": "cta/terms",
     "type": "joomlatools-installer",
-    "description": "Terms Package",
-    "keywords": ["joomla", "terms"],
+    "description": "Terms Package. Tag management.",
+    "keywords": ["joomla", "nooku", "terms", "tags"],
     "homepage": "https://github.com/cta-int/terms.git",
     "authors": [
         {
