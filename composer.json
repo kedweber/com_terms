@@ -1,9 +1,10 @@
 {
-    "name": "cta/terms",
+    "name": "moyo/terms",
     "type": "joomlatools-installer",
     "description": "Terms Package. Tag management.",
     "keywords": ["joomla", "nooku", "terms", "tags"],
     "homepage": "https://github.com/cta-int/terms.git",
+    "homepage": "https://github.com/moyoweb/com_terms.git"
     "authors": [
         {
             "name": "Dave Li",
