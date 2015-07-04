@@ -3,7 +3,6 @@
     "type": "joomlatools-installer",
     "description": "Terms Package. Tag management.",
     "keywords": ["joomla", "nooku", "terms", "tags"],
-    "homepage": "https://github.com/moyoweb/com_terms.git",
     "homepage": "https://github.com/moyoweb/com_terms.git"
     "authors": [
         {
