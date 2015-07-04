@@ -3,8 +3,7 @@
 ## Description
 
 This component replaces Joomla 3 tags and adds tag functionality to Joomla 2.5. Note that tags are saved multilingually.
-One can translate tags. If in one language a tag is chosen, the same tag is assigned to each translation in the proper
-language.
+One can translate tags. If in one language a tag is chosen, the same tag is assigned to each translation in the proper language.
 
 This component was developed by [Moyo Web Architects](http://moyoweb.nl).
 
@@ -24,21 +23,32 @@ This component was developed by [Moyo Web Architects](http://moyoweb.nl).
 
 ### Composer
 
-Installation is done through composer. In your `composer.json` file, you should add the following lines to the repositories
-section:
+Installation is done through composer. In your `composer.json` file, you should add the following lines to the repositories section:
+
+from this local repository;
 
 ```json
 {
-    "name": "cta/terms",
+    "name": "moyo/terms",
     "type": "vcs",
-    "url": "https://github.com/cta-int/terms.git"
+    "url": "https://github.com/kedweber/com_terms.git"
+}
+```
+
+and the official website shall be;
+
+```json
+{
+    "name": "moyo/terms",
+    "type": "vcs",
+    "url": "https://github.com/moyoweb/com_terms.git"
 }
 ```
 
 The require section should contain the following line:
 
 ```json
-    "cta/terms": "1.0.*",
+    "moyo/terms": "1.0.*",
 ```
 
 Afterward, just run `composer update` from the root of your Joomla project.
