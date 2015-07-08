@@ -84,3 +84,7 @@ rather a piece of code that looks somewhat like this
 
 There is a frontend view that retrieves articles by tag. This view triggers a HMVC call to com_articles with a state 'tag'
 added.
+
+## Related
+
+* [Official style guidelines](https://github.com/joomla/user-interface-text) for writing en-GB strings. 
